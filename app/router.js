@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('committees');
   this.route('bills');
   this.route('bill', {path: '/bill/:bill_id'});
+  this.route('committee', {path: '/committee/:committee_id'});
 });
 
 export default Router;

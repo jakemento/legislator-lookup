@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model as |committee|}}
-  <li>{{committee.parent_committee_id}} </li>
+  <li>{{#link-to 'committee' committee.committee_id}}{{committee.committee_id}} {{/link-to}} </li>
   <p> {{committee.name}} </p>
   {{/each}}
 </ul>
