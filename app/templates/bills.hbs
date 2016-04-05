@@ -4,6 +4,6 @@
 
 <ol>
   {{#each model as |bill|}}
-  <li>{{bill.official_title}} </li>
+  <li>{{#link-to 'bill' bill.bill_id}}{{bill.official_title}} {{/link-to}} </li>
   {{/each}}
 </ol>
