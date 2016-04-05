@@ -1,0 +1,8 @@
+{{#link-to 'index'}} GO Home {{/link-to}}
+
+<ul>
+  {{#each model as |committee|}}
+  <li>{{committee.parent_committee_id}} </li>
+  <p> {{committee.name}} </p>
+  {{/each}}
+</ul>

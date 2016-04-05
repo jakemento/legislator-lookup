@@ -1,0 +1,9 @@
+{{#link-to 'index'}} Go Home {{/link-to}}
+
+<center> <h1>Recent Bills: </h1> </center>
+
+<ol>
+  {{#each model as |bill|}}
+  <li>{{bill.official_title}} </li>
+  {{/each}}
+</ol>
